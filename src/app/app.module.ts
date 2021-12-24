@@ -15,7 +15,7 @@ import { BytesPipe } from './pipes/bytes.pipe';
   imports: [
     BrowserModule,
   ],
-  providers: [],
+  providers: [BytesPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

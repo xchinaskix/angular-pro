@@ -18,5 +18,12 @@
       <li>{{file.name + '.' + file.type | lowercase}} | {{file.size | bytespipe}}</li>
     </ng-container>
   </div>
+
+  <div>
+    <p>custom pipe (using in ts file)</p>
+    <ng-container *ngFor="let file of filesMappedByPipe">
+      <li>{{file.name + '.' + file.type | lowercase}} | {{file.size}}</li>
+    </ng-container>
+  </div>
 </div>
 
