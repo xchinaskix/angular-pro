@@ -11,5 +11,12 @@
       <li>{{i}} {{ item.name }} - {{item.age}}</li>
     </ng-template>
   </div>
+
+  <div>
+    <p>custom pipe</p>
+    <ng-container *ngFor="let file of files">
+      <li>{{file.name + '.' + file.type | lowercase}} | {{file.size | bytespipe}}</li>
+    </ng-container>
+  </div>
 </div>
 
